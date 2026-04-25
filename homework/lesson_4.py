@@ -46,10 +46,10 @@ print("   ".isspace())
 print("\nTask 8: Срезы строк")
 task_8 = "Python very good"
 print(task_8[:3])
-print(task_8[13:])
+print(task_8[-3:])
 print(task_8[::2])
 print(task_8[::-1])
 
 print("\nTask 9: Экранирование символов")
 print("Он сказал: \"Привет\"")
-print("Он сказал:\n\"Привет\"")
+print("Первая строка\nВторая строка")
