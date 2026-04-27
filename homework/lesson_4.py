@@ -24,7 +24,7 @@ print(task_3_spaces.rstrip())
 print("\nTask 4: Разделение и объединение строк")
 task_4_string = "яблоко,банан,апельсин,груша"
 task_4_list = task_4_string.split(",")
-print(task_4_string.split(','))
+print(task_4_list)
 print(" | ".join(task_4_list))
 
 print("\nTask 5: Замена подстрок")
