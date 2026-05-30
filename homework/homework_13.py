@@ -77,11 +77,11 @@ def animal_sound(animal: Animal):
 #    - cat1 = Cat("Мурка", 2)
 dog1 = Dog("Бобик", 3)
 dog2 = Dog("Шарик", 5)
-cat1 = Cat("Мурка", 3)
+cat1 = Cat("Мурка", 2)
 
 
 # 7) Создайте объект зоопарка: zoo = Zoo("Городской зоопарк")
-zoo = Zoo("Городоской зоопарк")
+zoo = Zoo("Городской зоопарк")
 # 8) Добавьте всех животных в зоопарк через метод add_animal()
 zoo.add_animal(dog1)
 zoo.add_animal(dog2)
@@ -93,8 +93,7 @@ print(zoo.get_animals_count())
 # 10) Используйте цикл for для перебора всех животных зоопарка:
 #     - Для каждого животного вызовите функцию animal_sound()
 #     - Это должно продемонстрировать полиморфизм
-animals = zoo.get_animals()
-for a in animals:
+for a in zoo.get_animals():
     animal_sound(a)
 
 # 11) Попробуйте создать объект Animal() напрямую — объясните в комментарии, что произошло и почему
