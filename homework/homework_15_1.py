@@ -10,7 +10,6 @@ def log_execution(func):
         print("Функция запущена")
 
         f = func(*args, **kwargs)
-        print(f)
 
         print("Функция завершена")
         return f
@@ -74,7 +73,7 @@ class Book:
 # 4) Создайте обычный метод get_info:
 #    - Возвращает строку: "Книга '{title}' автор {author}, цена {price} руб."
     def get_info(self):
-        return f'Книга {self.title} автор {self.author}, цена {self.price} руб'
+        return f"Книга '{self.title}' автор {self.author}, цена {self.price} руб"
 
 
 # 5) Использование:

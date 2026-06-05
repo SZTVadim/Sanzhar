@@ -6,7 +6,7 @@
 # Для проверки вызовите find_log_entries("ERROR").
 
 def find_log_entries(key_word):
-    with open('../data_test/application.log', 'r') as message:
+    with open('data_test/application.log', 'r') as message:
         for i in message:
             if key_word in i:
                 print(i)
