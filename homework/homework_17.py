@@ -8,25 +8,26 @@ headers = {
 }
 
 json_for_post_request = {
-                             'id': 9,
-                             'category': {
+                            'id': 9,
+                            'category': {
                                  'id': 1,
                                  'name': 'cat'
                              },
-                             'name': 'Tom',
-                            "photoUrls": [
-                                "string"
+                            'name': 'Tom',
+                            'photoUrls': [
+                                'string'
                               ],
-                              "tags": [
+                            'tags': [
                                 {
-                                  "id": 1,
-                                  "name": "T"
+                                  'id': 1,
+                                  'name': 'T'
                                 }
                               ],
-                              "status": "available"
+                            'status': 'available'
                          }
 
-post_response = requests.post(url=f"{BASE_URL}/pet", json=json_for_post_request)
+post_response = requests.post(url=f"{BASE_URL}/pet",
+                              json=json_for_post_request)
 
 get_response = requests.get(url=f"{BASE_URL}/pet/9")
 
@@ -41,13 +42,13 @@ put_response = requests.put(url=f"{BASE_URL}/pet",
                             "photoUrls": [
                                 "url"
                               ],
-                              "tags": [
+                            "tags": [
                                 {
                                   "id": 5,
                                   "name": "Tag"
                                 }
-                              ],
-                              "status": "sold"
+                                ],
+                            "status": "sold"
                             }
                             )
 
