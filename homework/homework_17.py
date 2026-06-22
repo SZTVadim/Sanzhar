@@ -4,7 +4,7 @@ BASE_URL = 'https://petstore.swagger.io/v2'
 
 headers = {
     'accept': 'application/json',
-    'apy_key': 'Test'
+    'api_key': 'Test'
 }
 
 json_for_post_request = {
